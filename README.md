@@ -111,6 +111,13 @@ settings.xml
         <password>PASSWORD</password>
     </server>
 ```
+
+```sh
+    mvn clean package deploy -DmuleDeploy 
+        -Dapp.runtime=<<Runtime-Version>> \
+        -Dcloudhub.application.name="<<Unique-app-Name>>" \
+        -Denvironment=<<Environment>>
+```
 ## References:
 -   https://docs.mulesoft.com/access-management/connected-apps-overview
 -   https://help.mulesoft.com/s/article/How-to-use-Connected-Apps-with-CI-CD
