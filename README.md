@@ -42,8 +42,6 @@
     </configuration>
 ```
 
-## Deployment of mule application to cloudhub using connected app
-
 ```sh
     mvn clean package deploy -DmuleDeploy 
         -Dapp.runtime=<<Runtime-Version>> \
@@ -52,6 +50,8 @@
         -Dcloudhub.application.name="<<Unique-app-Name>>" \
         -Denvironment=<<Environment>>
 ```
+
+## Deployment of mule application to cloudhub using connected app
 
 ```sh
     <configuration>
