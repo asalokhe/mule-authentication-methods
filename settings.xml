@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <settings xmlns="http://maven.apache.org/SETTINGS/1.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd">
+        <pluginGroups>
+        </pluginGroups>
+        <proxies>
+        </proxies>
+        <servers>
+			<server>
+                <id>my.server.cred.id</id>
+                <username>USERNAME</username>
+                <password>PASSWORD</password>
+            </server>
+        </servers>
+		
+		<profiles>
+			<profile> 
+			  <id>my.server.cred.id</id> 
+			  <activation> 
+				<activeByDefault>true</activeByDefault> 
+			  </activation> 
+			  <properties> 
+				<mule.username>USERNAME</mule.username> 
+				<mule.password>PASSWORD</mule.password> 
+			  </properties> 
+			</profile>
+		</profiles>
+    </settings>

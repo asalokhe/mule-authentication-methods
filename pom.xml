@@ -30,19 +30,18 @@
 				<version>${mule.maven.plugin.version}</version>
 				<extensions>true</extensions>
 				<configuration>
-				    <cloudHubDeployment>
-				      <uri>https://anypoint.mulesoft.com</uri>
-				      <muleVersion>${app.runtime}</muleVersion>
-				      <connectedAppClientId>${client.id}</connectedAppClientId>
-				      <connectedAppClientSecret>${client.secret}</connectedAppClientSecret>
-				      <connectedAppGrantType>${grant.type}</connectedAppGrantType>
-				      <environment>${environment}</environment>
-				      <objectStoreV2>true</objectStoreV2>
-				      <properties>
-				        <key>value</key>
-				      </properties>
-				    </cloudHubDeployment>
-				 </configuration>
+			        <cloudHubDeployment>
+			            <uri>https://anypoint.mulesoft.com</uri>
+			            <muleVersion>${app.runtime}</muleVersion>
+			            <server>my.server.cred.id</server>
+			            <applicationName>${cloudhub.application.name}</applicationName>
+			            <environment>${environment}</environment>
+			            <objectStoreV2>true</objectStoreV2>
+			            <properties>
+			            <key>value</key>
+			            </properties>
+			        </cloudHubDeployment>
+			    </configuration>
 			</plugin>
 		</plugins>
 	</build>
