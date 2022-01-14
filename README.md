@@ -1,4 +1,4 @@
-# mule-connected-app
+# mule-authentication-methods
   Application demonstrating various authentication methods for mule app deployments.
   Check various branches for different methods. 
 -   Deployment of mule application to cloudhub using username and password
@@ -12,10 +12,6 @@
 -   Deployment of mule application to cloudhub using username and password from Settings.xml
 
     **Branch Name: username-password-ext-setting**
-
--   Deployment of mule application to cloudhub using connected app settings defined in settings.xml
-
-    **Branch Name: connected-app-ext-setting**
 
 
 ## Prerequisite:
@@ -46,8 +42,6 @@
     </configuration>
 ```
 
-## Deployment of mule application to cloudhub using connected app
-
 ```sh
     mvn clean package deploy -DmuleDeploy 
         -Dapp.runtime=<<Runtime-Version>> \
@@ -56,6 +50,8 @@
         -Dcloudhub.application.name="<<Unique-app-Name>>" \
         -Denvironment=<<Environment>>
 ```
+
+## Deployment of mule application to cloudhub using connected app
 
 ```sh
     <configuration>
