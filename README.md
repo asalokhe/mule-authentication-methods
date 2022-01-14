@@ -1,4 +1,4 @@
-# mule-connected-app
+# mule-authentication-methods
   Application demonstrating various authentication methods for mule app deployments.
   Check various branches for different methods. 
 -   Deployment of mule application to cloudhub using username and password
